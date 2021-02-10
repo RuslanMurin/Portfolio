@@ -1,11 +1,11 @@
 import Foundation
 import Charts
 
-class ChartsInfrastructure{
-    static let shared = ChartsInfrastructure()
+class ChartsViewModel{
+    static let shared = ChartsViewModel()
     
-    let costSingleton = CostInfrastructure.shared
-    let incomeSingleton = IncomeInfrastructure.shared
+    let costViewModel = CostViewModel.shared
+    let incomeSingleton = IncomeViewModel.shared
     
     //--------------------Returns Data for incomes line--------------------
     func fetchIncomes(days: Int) -> [BarChartDataEntry] {
@@ -28,7 +28,7 @@ class ChartsInfrastructure{
         
         var dataEntrys: [BarChartDataEntry] = []
         guard let from = Calendar.current.date(byAdding: .day, value: days, to: Date()) else { return [] }
-        let costs = self.costSingleton.findCostsByDate(from: from, to: Date())
+        let costs = self.costViewModel.findCostsByDate(from: from, to: Date())
         
         for i in 0..<costs.count{
             let timeIntervalForDate: TimeInterval = Double(costs[i].date.timeIntervalSince1970 / 86400).rounded()
@@ -44,7 +44,7 @@ class ChartsInfrastructure{
         
         var dataEntrys: [BarChartDataEntry] = []
         guard let from = Calendar.current.date(byAdding: .day, value: days, to: Date()) else { return [] }
-        let costs = self.costSingleton.findCostsByCategoryAndDate(key: categoryKey, from: from, to: Date())
+        let costs = self.costViewModel.findCostsByCategoryAndDate(key: categoryKey, from: from, to: Date())
         
         for i in 0..<costs.count{
             let timeIntervalForDate: TimeInterval = Double(costs[i].date.timeIntervalSince1970 / 86400).rounded()

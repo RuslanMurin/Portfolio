@@ -4,7 +4,7 @@ import Charts
 class ChartViewController: UIViewController, ChartViewDelegate{
     
     weak var axisFormatDelegate: IAxisValueFormatter?
-    var chartsInfrastructure = ChartsInfrastructure.shared
+    var chartsViewModel = ChartsViewModel.shared
     
     //--------------------Setup Chart View--------------------
     lazy var lineChartView: LineChartView = { () -> LineChartView in
@@ -42,13 +42,13 @@ class ChartViewController: UIViewController, ChartViewDelegate{
     }
     
     func updateChart(days: Int){
-        let set1 = LineChartDataSet(entries: chartsInfrastructure.fetchCosts(days: days).sorted{$0.x < $1.x}, label: "Расходы")
+        let set1 = LineChartDataSet(entries: chartsViewModel.fetchCosts(days: days).sorted{$0.x < $1.x}, label: "Расходы")
         set1.drawCirclesEnabled = false
         set1.mode = .linear
         set1.lineWidth = 3
         set1.setColor(.systemRed)
         
-        let set2 = LineChartDataSet(entries: chartsInfrastructure.fetchIncomes(days: days).sorted{$0.x < $1.x}, label: "Доходы")
+        let set2 = LineChartDataSet(entries: chartsViewModel.fetchIncomes(days: days).sorted{$0.x < $1.x}, label: "Доходы")
         set2.drawCirclesEnabled = false
         set2.mode = .linear
         set2.lineWidth = 3

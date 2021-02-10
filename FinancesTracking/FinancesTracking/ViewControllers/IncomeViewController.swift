@@ -4,10 +4,10 @@ class IncomeViewController: UIViewController{
     @IBOutlet weak var balanceLabel: UILabel!
     @IBOutlet weak var incomesTableView: UITableView!
     
-    var incomeSingleton = IncomeInfrastructure.shared
+    var incomeViewModel = IncomeViewModel.shared
     
     func updateBalance(){
-        let balance = incomeSingleton.sum - CostInfrastructure.shared.sum
+        let balance = incomeViewModel.sum - CostViewModel.shared.sum
         balanceLabel.text = "\(balance) Р"
     }
     
@@ -24,22 +24,22 @@ class IncomeViewController: UIViewController{
 
 extension IncomeViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return incomeSingleton.incomes.count
+        return incomeViewModel.incomes.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "IncomeCell", for: indexPath) as! IncomeTableViewCell
-        cell.valueLabel.text = "\(incomeSingleton.incomes[indexPath.row].value) Р"
-        cell.dateLabel.text = incomeSingleton.incomes[indexPath.row].date.formatDate()
+        cell.valueLabel.text = "\(incomeViewModel.incomes[indexPath.row].value) Р"
+        cell.dateLabel.text = incomeViewModel.incomes[indexPath.row].date.formatDate()
         return cell
     }
     //--------------------Delete Row--------------------
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
-        let income = self.incomeSingleton.incomes[indexPath.row]
+        let income = self.incomeViewModel.incomes[indexPath.row]
         let deleteAction = UIContextualAction(style: .destructive,
                                               title: "Удалить",
                                               handler: { [self]  (contextualAction, view, boolValue) in
-                                                incomeSingleton.deleteIncome(income.key)
+                                                incomeViewModel.deleteIncome(income.key)
                                                 updateBalance()
                                                 tableView.deleteRows(at: [indexPath], with: .fade)})
         let swipeActions = UISwipeActionsConfiguration(actions: [deleteAction])

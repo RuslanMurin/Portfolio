@@ -21,7 +21,7 @@
 		C3281A6225ACED9400B4745F /* IncomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3281A6125ACED9400B4745F /* IncomeViewController.swift */; };
 		C3281A6525ACEDB200B4745F /* CostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3281A6425ACEDB200B4745F /* CostsViewController.swift */; };
 		C33D7AE325BC77D000504101 /* Pods_FinancesTracking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 875DED24F099FB99AB3673AA /* Pods_FinancesTracking.framework */; };
-		C33D7AE625BC79F600504101 /* ChartsInfrastructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33D7AE525BC79F600504101 /* ChartsInfrastructure.swift */; };
+		C33D7AE625BC79F600504101 /* ChartsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33D7AE525BC79F600504101 /* ChartsViewModel.swift */; };
 		C3982CA425BFE6C70088B674 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3C3D03525AE182B00585FEF /* Realm.framework */; };
 		C3982CA525BFE6C70088B674 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C3C3D03525AE182B00585FEF /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C3982CA725BFE6C90088B674 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3C3D02D25AE049000585FEF /* RealmSwift.framework */; };
@@ -29,9 +29,9 @@
 		C39E765125BF09C100D8705B /* CostsChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39E765025BF09C100D8705B /* CostsChartViewController.swift */; };
 		C3C3D02525ADFDEB00585FEF /* IncomePopoverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C3D02425ADFDEB00585FEF /* IncomePopoverVC.swift */; };
 		C3C3D02A25AE041A00585FEF /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C3D02925AE041A00585FEF /* Model.swift */; };
-		C3C3D03225AE070100585FEF /* IncomeInfrastructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C3D03125AE070100585FEF /* IncomeInfrastructure.swift */; };
+		C3C3D03225AE070100585FEF /* IncomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C3D03125AE070100585FEF /* IncomeViewModel.swift */; };
 		C3C3D03425AE107300585FEF /* IncomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C3D03325AE107300585FEF /* IncomeTableViewCell.swift */; };
-		C3C3D03A25AF773300585FEF /* CostInfrastructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C3D03925AF773300585FEF /* CostInfrastructure.swift */; };
+		C3C3D03A25AF773300585FEF /* CostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C3D03925AF773300585FEF /* CostViewModel.swift */; };
 		C3C3D03E25AF7AEE00585FEF /* GroupPopoverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C3D03D25AF7AEE00585FEF /* GroupPopoverVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -68,15 +68,15 @@
 		C3281A5E25ACED8400B4745F /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
 		C3281A6125ACED9400B4745F /* IncomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeViewController.swift; sourceTree = "<group>"; };
 		C3281A6425ACEDB200B4745F /* CostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostsViewController.swift; sourceTree = "<group>"; };
-		C33D7AE525BC79F600504101 /* ChartsInfrastructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsInfrastructure.swift; sourceTree = "<group>"; };
+		C33D7AE525BC79F600504101 /* ChartsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsViewModel.swift; sourceTree = "<group>"; };
 		C39E765025BF09C100D8705B /* CostsChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostsChartViewController.swift; sourceTree = "<group>"; };
 		C3C3D02425ADFDEB00585FEF /* IncomePopoverVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomePopoverVC.swift; sourceTree = "<group>"; };
 		C3C3D02925AE041A00585FEF /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		C3C3D02D25AE049000585FEF /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
-		C3C3D03125AE070100585FEF /* IncomeInfrastructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeInfrastructure.swift; sourceTree = "<group>"; };
+		C3C3D03125AE070100585FEF /* IncomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeViewModel.swift; sourceTree = "<group>"; };
 		C3C3D03325AE107300585FEF /* IncomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeTableViewCell.swift; sourceTree = "<group>"; };
 		C3C3D03525AE182B00585FEF /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
-		C3C3D03925AF773300585FEF /* CostInfrastructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostInfrastructure.swift; sourceTree = "<group>"; };
+		C3C3D03925AF773300585FEF /* CostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostViewModel.swift; sourceTree = "<group>"; };
 		C3C3D03D25AF7AEE00585FEF /* GroupPopoverVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupPopoverVC.swift; sourceTree = "<group>"; };
 		DEEA3BA9046EAAF35129E66D /* Pods-FinancesTracking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinancesTracking.debug.xcconfig"; path = "Target Support Files/Pods-FinancesTracking/Pods-FinancesTracking.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -104,14 +104,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		C305BA5525B7172700544044 /* Infrastructure */ = {
+		C305BA5525B7172700544044 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				C3C3D03125AE070100585FEF /* IncomeInfrastructure.swift */,
-				C3C3D03925AF773300585FEF /* CostInfrastructure.swift */,
-				C33D7AE525BC79F600504101 /* ChartsInfrastructure.swift */,
+				C3C3D03125AE070100585FEF /* IncomeViewModel.swift */,
+				C3C3D03925AF773300585FEF /* CostViewModel.swift */,
+				C33D7AE525BC79F600504101 /* ChartsViewModel.swift */,
 			);
-			path = Infrastructure;
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		C305BA5625B7173F00544044 /* Model */ = {
@@ -159,7 +159,7 @@
 				C3281A4C25ACD50700B4745F /* Main.storyboard */,
 				C3281A4F25ACD50E00B4745F /* Assets.xcassets */,
 				C305BA5625B7173F00544044 /* Model */,
-				C305BA5525B7172700544044 /* Infrastructure */,
+				C305BA5525B7172700544044 /* ViewModel */,
 				C30A03A525AF7E4A002452A3 /* Tables and Collections */,
 				C3281A6725ACEDBB00B4745F /* ViewControllers */,
 				C3281A5125ACD50E00B4745F /* LaunchScreen.storyboard */,
@@ -320,7 +320,7 @@
 				C3C3D02A25AE041A00585FEF /* Model.swift in Sources */,
 				C313082125B70ED800C91E01 /* GlobalFunctions.swift in Sources */,
 				C3281A6525ACEDB200B4745F /* CostsViewController.swift in Sources */,
-				C3C3D03A25AF773300585FEF /* CostInfrastructure.swift in Sources */,
+				C3C3D03A25AF773300585FEF /* CostViewModel.swift in Sources */,
 				C30FD07A25B9F55B00A90638 /* ChartViewController.swift in Sources */,
 				C3281A4725ACD50700B4745F /* AppDelegate.swift in Sources */,
 				C30A03AA25B31888002452A3 /* CostPopoverVC.swift in Sources */,
@@ -329,11 +329,11 @@
 				C39E765125BF09C100D8705B /* CostsChartViewController.swift in Sources */,
 				C3C3D03425AE107300585FEF /* IncomeTableViewCell.swift in Sources */,
 				C3281A6225ACED9400B4745F /* IncomeViewController.swift in Sources */,
-				C3C3D03225AE070100585FEF /* IncomeInfrastructure.swift in Sources */,
+				C3C3D03225AE070100585FEF /* IncomeViewModel.swift in Sources */,
 				C3C3D02525ADFDEB00585FEF /* IncomePopoverVC.swift in Sources */,
 				C3C3D03E25AF7AEE00585FEF /* GroupPopoverVC.swift in Sources */,
 				C30A03A725AF7E74002452A3 /* CategoryTableViewCell.swift in Sources */,
-				C33D7AE625BC79F600504101 /* ChartsInfrastructure.swift in Sources */,
+				C33D7AE625BC79F600504101 /* ChartsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,7 +410,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -465,7 +465,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

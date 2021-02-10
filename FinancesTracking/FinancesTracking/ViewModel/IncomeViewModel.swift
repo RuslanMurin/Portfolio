@@ -1,8 +1,8 @@
 import Foundation
 import RealmSwift
 
-class IncomeInfrastructure{
-    static let shared = IncomeInfrastructure()
+class IncomeViewModel{
+    static let shared = IncomeViewModel()
     private let realm = try? Realm()
     
     public var incomes = Array(try! Realm().objects(Income.self)).sorted{$1.date < $0.date}

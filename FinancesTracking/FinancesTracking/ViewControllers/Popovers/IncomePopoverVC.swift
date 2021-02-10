@@ -7,8 +7,8 @@ class IncomePopoverVC: UIViewController, AddingPopover {
 
     @IBAction func okButtonPressed(_ sender: UIButton) {
         guard valueTextField.text != "" else { return }
-        IncomeInfrastructure.shared.addIncome(valueTextField.text ?? "0")
-        IncomeInfrastructure.shared.fetchAll()
+        IncomeViewModel.shared.addIncome(valueTextField.text ?? "0")
+        IncomeViewModel.shared.fetchAll()
         delegate?.okButtonPressed()
         dismiss(animated: true)
     }

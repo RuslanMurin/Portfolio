@@ -4,7 +4,7 @@ class CostsViewController: UIViewController{
     @IBOutlet weak var costsTableView: UITableView!
     @IBOutlet weak var titleLabel: UILabel!
     
-    let costsSingleton = CostInfrastructure.shared
+    let costViewModel = CostViewModel.shared
     
     var category: Category?
     
@@ -37,12 +37,12 @@ class CostsViewController: UIViewController{
 
 extension CostsViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        costsSingleton.findCostsByKey(key: category?.key ?? "").count
+        costViewModel.findCostsByKey(key: category?.key ?? "").count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CostCell", for: indexPath) as! CostTableViewCell
-        let costs = costsSingleton.findCostsByKey(key: category?.key ?? "")
+        let costs = costViewModel.findCostsByKey(key: category?.key ?? "")
         cell.nameLabel.text = costs[indexPath.row].name
         cell.dateLabel.text = costs[indexPath.row].date.formatDate()
         cell.valueLabel.text = "\(costs[indexPath.row].value) Р"
@@ -50,11 +50,11 @@ extension CostsViewController: UITableViewDelegate, UITableViewDataSource{
     }
     //--------------------Delete Row--------------------
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
-        let cost = self.costsSingleton.findCostsByKey(key: category?.key ?? "")[indexPath.row]
+        let cost = self.costViewModel.findCostsByKey(key: category?.key ?? "")[indexPath.row]
         let deleteAction = UIContextualAction(style: .destructive,
                                               title: "Удалить",
                                               handler: { [self]  (contextualAction, view, boolValue) in
-                                                costsSingleton.deleteCost(cost.key)
+                                                costViewModel.deleteCost(cost.key)
                                                 tableView.deleteRows(at: [indexPath], with: .fade)})
         let swipeActions = UISwipeActionsConfiguration(actions: [deleteAction])
         return swipeActions

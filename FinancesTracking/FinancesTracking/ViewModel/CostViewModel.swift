@@ -1,8 +1,8 @@
 import Foundation
 import RealmSwift
 
-class CostInfrastructure {
-    static let shared = CostInfrastructure()
+class CostViewModel {
+    static let shared = CostViewModel()
     private let realm = try? Realm()
     
     public var categories = Array(try! Realm().objects(Category.self)).sorted{$1.groupName > $0.groupName}

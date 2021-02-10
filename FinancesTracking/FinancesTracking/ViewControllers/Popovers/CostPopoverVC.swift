@@ -15,8 +15,8 @@ class CostPopoverVC: UIViewController, AddingPopover {
 extension CostPopoverVC: UITextFieldDelegate{
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         guard valueTextField.text != "" && nameTextField.text != "" else { return false}
-        CostInfrastructure.shared.addCost(forKey: self.categoryKey, named: nameTextField.text ?? "none", value: valueTextField.text ?? "0")
-        CostInfrastructure.shared.fetchAll()
+        CostViewModel.shared.addCost(forKey: self.categoryKey, named: nameTextField.text ?? "none", value: valueTextField.text ?? "0")
+        CostViewModel.shared.fetchAll()
         dismiss(animated: true, completion: {self.delegate?.okButtonPressed()})
         return true
     }

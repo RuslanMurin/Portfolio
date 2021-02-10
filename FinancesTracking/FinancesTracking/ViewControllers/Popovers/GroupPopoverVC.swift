@@ -14,8 +14,8 @@ class GroupPopoverVC: UIViewController, AddingPopover {
 extension GroupPopoverVC: UITextFieldDelegate{
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         guard nameTextField.text != "" else { return false}
-        CostInfrastructure.shared.addCategory(nameTextField.text ?? "")
-        CostInfrastructure.shared.fetchAll()
+        CostViewModel.shared.addCategory(nameTextField.text ?? "")
+        CostViewModel.shared.fetchAll()
         delegate?.okButtonPressed()
         dismiss(animated: true)
         return true
