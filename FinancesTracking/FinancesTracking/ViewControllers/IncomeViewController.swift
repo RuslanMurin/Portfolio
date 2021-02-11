@@ -6,7 +6,7 @@ class IncomeViewController: UIViewController{
     
     var incomeViewModel = IncomeViewModel.shared
     
-    func updateBalance(){
+    func updateBalance() {
         let balance = incomeViewModel.sum - CostViewModel.shared.sum
         balanceLabel.text = "\(balance) Р"
     }

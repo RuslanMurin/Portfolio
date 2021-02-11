@@ -12,7 +12,7 @@ class CategoriesViewController: UIViewController {
     
     @IBAction func plusButtonPressed(_ sender: UIButton) {
         //--------------------Setup Popover--------------------
-        setupPopover(pop: GroupPopoverVC(), parent: self, identifier: "CategoryPopover", sender: sender, storyboard: storyboard)
+        setupPopover(pop: CategoryPopoverVC(), parent: self, identifier: "CategoryPopover", sender: sender, storyboard: storyboard)
     }
 }
 

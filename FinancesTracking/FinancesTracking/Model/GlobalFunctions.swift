@@ -13,11 +13,11 @@ extension Date{
 protocol UpdateDataDelegate {
     func okButtonPressed()
 }
-protocol AddingPopover: UIViewController{
-    var delegate: UpdateDataDelegate? {get set}
+protocol AddingPopover: UIViewController {
+    var delegate: UpdateDataDelegate? { get set }
 }
-
-func setupPopover<T: AddingPopover>(pop: T, parent: UIViewController, identifier: String, sender: UIButton, storyboard: UIStoryboard?){
+//-----------Call to show custom popover------------
+func setupPopover<T: AddingPopover>(pop: T, parent: UIViewController, identifier: String, sender: UIButton, storyboard: UIStoryboard?) {
     guard let popVC = storyboard?.instantiateViewController(withIdentifier: identifier) as? T else { return }
     popVC.modalPresentationStyle = .popover
     popVC.delegate = parent as? UpdateDataDelegate

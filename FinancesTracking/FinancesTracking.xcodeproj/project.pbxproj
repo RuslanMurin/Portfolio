@@ -32,7 +32,7 @@
 		C3C3D03225AE070100585FEF /* IncomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C3D03125AE070100585FEF /* IncomeViewModel.swift */; };
 		C3C3D03425AE107300585FEF /* IncomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C3D03325AE107300585FEF /* IncomeTableViewCell.swift */; };
 		C3C3D03A25AF773300585FEF /* CostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C3D03925AF773300585FEF /* CostViewModel.swift */; };
-		C3C3D03E25AF7AEE00585FEF /* GroupPopoverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C3D03D25AF7AEE00585FEF /* GroupPopoverVC.swift */; };
+		C3C3D03E25AF7AEE00585FEF /* CategoryPopoverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C3D03D25AF7AEE00585FEF /* CategoryPopoverVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -77,7 +77,7 @@
 		C3C3D03325AE107300585FEF /* IncomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeTableViewCell.swift; sourceTree = "<group>"; };
 		C3C3D03525AE182B00585FEF /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
 		C3C3D03925AF773300585FEF /* CostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostViewModel.swift; sourceTree = "<group>"; };
-		C3C3D03D25AF7AEE00585FEF /* GroupPopoverVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupPopoverVC.swift; sourceTree = "<group>"; };
+		C3C3D03D25AF7AEE00585FEF /* CategoryPopoverVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPopoverVC.swift; sourceTree = "<group>"; };
 		DEEA3BA9046EAAF35129E66D /* Pods-FinancesTracking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinancesTracking.debug.xcconfig"; path = "Target Support Files/Pods-FinancesTracking/Pods-FinancesTracking.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -185,7 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				C3C3D02425ADFDEB00585FEF /* IncomePopoverVC.swift */,
-				C3C3D03D25AF7AEE00585FEF /* GroupPopoverVC.swift */,
+				C3C3D03D25AF7AEE00585FEF /* CategoryPopoverVC.swift */,
 				C30A03A925B31888002452A3 /* CostPopoverVC.swift */,
 			);
 			path = Popovers;
@@ -331,7 +331,7 @@
 				C3281A6225ACED9400B4745F /* IncomeViewController.swift in Sources */,
 				C3C3D03225AE070100585FEF /* IncomeViewModel.swift in Sources */,
 				C3C3D02525ADFDEB00585FEF /* IncomePopoverVC.swift in Sources */,
-				C3C3D03E25AF7AEE00585FEF /* GroupPopoverVC.swift in Sources */,
+				C3C3D03E25AF7AEE00585FEF /* CategoryPopoverVC.swift in Sources */,
 				C30A03A725AF7E74002452A3 /* CategoryTableViewCell.swift in Sources */,
 				C33D7AE625BC79F600504101 /* ChartsViewModel.swift in Sources */,
 			);

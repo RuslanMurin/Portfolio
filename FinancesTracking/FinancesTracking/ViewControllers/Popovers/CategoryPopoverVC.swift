@@ -1,6 +1,6 @@
 import UIKit
 
-class GroupPopoverVC: UIViewController, AddingPopover {
+class CategoryPopoverVC: UIViewController, AddingPopover {
     @IBOutlet weak var nameTextField: UITextField!
     
     var delegate: UpdateDataDelegate?
@@ -11,7 +11,7 @@ class GroupPopoverVC: UIViewController, AddingPopover {
     }
 }
 
-extension GroupPopoverVC: UITextFieldDelegate{
+extension CategoryPopoverVC: UITextFieldDelegate{
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         guard nameTextField.text != "" else { return false}
         CostViewModel.shared.addCategory(nameTextField.text ?? "")

@@ -41,7 +41,7 @@ class ChartViewController: UIViewController, ChartViewDelegate{
         }
     }
     
-    func updateChart(days: Int){
+    func updateChart(days: Int) {
         let set1 = LineChartDataSet(entries: chartsViewModel.fetchCosts(days: days).sorted{$0.x < $1.x}, label: "Расходы")
         set1.drawCirclesEnabled = false
         set1.mode = .linear
