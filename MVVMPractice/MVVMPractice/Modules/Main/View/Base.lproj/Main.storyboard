@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Pryaniki" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LWd-AR-1bm">
+                                <rect key="frame" x="0.0" y="646" width="414" height="216"/>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GBr-SO-vlr">
+                                <rect key="frame" x="10" y="54" width="394" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wiZ-Ia-WYB">
+                                <rect key="frame" x="143" y="85" width="128" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="MoW-l9-BZQ"/>
+                                    <constraint firstAttribute="width" secondItem="wiZ-Ia-WYB" secondAttribute="height" multiplier="1:1" id="YXl-JM-MZ9"/>
+                                </constraints>
+                            </imageView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2YQ-u3-9ce">
+                                <rect key="frame" x="47" y="223" width="320" height="216"/>
+                            </pickerView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wiZ-Ia-WYB" firstAttribute="top" secondItem="GBr-SO-vlr" secondAttribute="bottom" constant="10" id="17h-PY-TUc"/>
+                            <constraint firstItem="wiZ-Ia-WYB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4bc-62-wyW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="LWd-AR-1bm" secondAttribute="bottom" id="Ugs-ci-6wN"/>
+                            <constraint firstItem="2YQ-u3-9ce" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XqT-9v-HWm"/>
+                            <constraint firstItem="GBr-SO-vlr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="Zbj-Lq-AQ8"/>
+                            <constraint firstItem="GBr-SO-vlr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="exc-6M-uTW"/>
+                            <constraint firstItem="LWd-AR-1bm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jvF-ld-t4N"/>
+                            <constraint firstItem="2YQ-u3-9ce" firstAttribute="top" secondItem="wiZ-Ia-WYB" secondAttribute="bottom" constant="10" id="oGy-tQ-IpZ"/>
+                            <constraint firstItem="LWd-AR-1bm" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ujZ-9s-P1T"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GBr-SO-vlr" secondAttribute="trailing" constant="10" id="z4u-CO-359"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="wiZ-Ia-WYB" id="E3Z-6I-cw7"/>
+                        <outlet property="label" destination="GBr-SO-vlr" id="nJV-kV-E5C"/>
+                        <outlet property="pickerView" destination="LWd-AR-1bm" id="KDM-ze-ALi"/>
+                        <outlet property="variantsPicker" destination="2YQ-u3-9ce" id="zWn-10-IEg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-184.05797101449278" y="67.633928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
