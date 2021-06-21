@@ -1,0 +1,6 @@
+framework module Pods_TwichAPI {
+  umbrella header "Pods-TwichAPI-umbrella.h"
+
+  export *
+  module * { export * }
+}

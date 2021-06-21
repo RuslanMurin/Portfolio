@@ -1,0 +1,456 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6ED57760B19F471B35E4E63C /* Pods_TwichAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 479D23D5C0E17E9761B3AA31 /* Pods_TwichAPI.framework */; };
+		C376292B2681104200A0EFA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C376292A2681104200A0EFA0 /* AppDelegate.swift */; };
+		C376292D2681104200A0EFA0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C376292C2681104200A0EFA0 /* SceneDelegate.swift */; };
+		C37629322681104200A0EFA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C37629302681104200A0EFA0 /* Main.storyboard */; };
+		C37629342681104C00A0EFA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C37629332681104C00A0EFA0 /* Assets.xcassets */; };
+		C37629372681104C00A0EFA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C37629352681104C00A0EFA0 /* LaunchScreen.storyboard */; };
+		C376293F2681125500A0EFA0 /* GamesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C376293E2681125500A0EFA0 /* GamesListViewController.swift */; };
+		C3762943268115CC00A0EFA0 /* GameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3762942268115CC00A0EFA0 /* GameTableViewCell.swift */; };
+		C37629452681271E00A0EFA0 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37629442681271E00A0EFA0 /* Game.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		479D23D5C0E17E9761B3AA31 /* Pods_TwichAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwichAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		50B3852AB26795988A6E56E4 /* Pods-TwichAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwichAPI.release.xcconfig"; path = "Target Support Files/Pods-TwichAPI/Pods-TwichAPI.release.xcconfig"; sourceTree = "<group>"; };
+		8F851853555C302F2D47A830 /* Pods-TwichAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwichAPI.debug.xcconfig"; path = "Target Support Files/Pods-TwichAPI/Pods-TwichAPI.debug.xcconfig"; sourceTree = "<group>"; };
+		C37629272681104200A0EFA0 /* TwichAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwichAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C376292A2681104200A0EFA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C376292C2681104200A0EFA0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C37629312681104200A0EFA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C37629332681104C00A0EFA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C37629362681104C00A0EFA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C37629382681104C00A0EFA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C376293E2681125500A0EFA0 /* GamesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesListViewController.swift; sourceTree = "<group>"; };
+		C3762942268115CC00A0EFA0 /* GameTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTableViewCell.swift; sourceTree = "<group>"; };
+		C37629442681271E00A0EFA0 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C37629242681104200A0EFA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6ED57760B19F471B35E4E63C /* Pods_TwichAPI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B46871B36CC148F904D80837 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				479D23D5C0E17E9761B3AA31 /* Pods_TwichAPI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BABD21ADA64CB2BF87C357EA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8F851853555C302F2D47A830 /* Pods-TwichAPI.debug.xcconfig */,
+				50B3852AB26795988A6E56E4 /* Pods-TwichAPI.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C376291E2681104200A0EFA0 = {
+			isa = PBXGroup;
+			children = (
+				C37629292681104200A0EFA0 /* TwichAPI */,
+				C37629282681104200A0EFA0 /* Products */,
+				BABD21ADA64CB2BF87C357EA /* Pods */,
+				B46871B36CC148F904D80837 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C37629282681104200A0EFA0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C37629272681104200A0EFA0 /* TwichAPI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C37629292681104200A0EFA0 /* TwichAPI */ = {
+			isa = PBXGroup;
+			children = (
+				C376292A2681104200A0EFA0 /* AppDelegate.swift */,
+				C376292C2681104200A0EFA0 /* SceneDelegate.swift */,
+				C376294A268158BC00A0EFA0 /* Twich */,
+				C37629302681104200A0EFA0 /* Main.storyboard */,
+				C37629332681104C00A0EFA0 /* Assets.xcassets */,
+				C37629352681104C00A0EFA0 /* LaunchScreen.storyboard */,
+				C37629382681104C00A0EFA0 /* Info.plist */,
+			);
+			path = TwichAPI;
+			sourceTree = "<group>";
+		};
+		C376294A268158BC00A0EFA0 /* Twich */ = {
+			isa = PBXGroup;
+			children = (
+				C376294C268158E200A0EFA0 /* Model */,
+				C376294B268158D900A0EFA0 /* ViewController */,
+				C376294D268158FA00A0EFA0 /* Cells */,
+			);
+			path = Twich;
+			sourceTree = "<group>";
+		};
+		C376294B268158D900A0EFA0 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C376293E2681125500A0EFA0 /* GamesListViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		C376294C268158E200A0EFA0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C37629442681271E00A0EFA0 /* Game.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C376294D268158FA00A0EFA0 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C3762942268115CC00A0EFA0 /* GameTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C37629262681104200A0EFA0 /* TwichAPI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C376293B2681104C00A0EFA0 /* Build configuration list for PBXNativeTarget "TwichAPI" */;
+			buildPhases = (
+				4379A997E335F74FAD6400DF /* [CP] Check Pods Manifest.lock */,
+				C37629232681104200A0EFA0 /* Sources */,
+				C37629242681104200A0EFA0 /* Frameworks */,
+				C37629252681104200A0EFA0 /* Resources */,
+				B5854702C772DB21FC8D161A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TwichAPI;
+			productName = TwichAPI;
+			productReference = C37629272681104200A0EFA0 /* TwichAPI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C376291F2681104200A0EFA0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					C37629262681104200A0EFA0 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = C37629222681104200A0EFA0 /* Build configuration list for PBXProject "TwichAPI" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C376291E2681104200A0EFA0;
+			productRefGroup = C37629282681104200A0EFA0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C37629262681104200A0EFA0 /* TwichAPI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C37629252681104200A0EFA0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C37629372681104C00A0EFA0 /* LaunchScreen.storyboard in Resources */,
+				C37629342681104C00A0EFA0 /* Assets.xcassets in Resources */,
+				C37629322681104200A0EFA0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4379A997E335F74FAD6400DF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TwichAPI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5854702C772DB21FC8D161A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TwichAPI/Pods-TwichAPI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TwichAPI/Pods-TwichAPI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TwichAPI/Pods-TwichAPI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C37629232681104200A0EFA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3762943268115CC00A0EFA0 /* GameTableViewCell.swift in Sources */,
+				C37629452681271E00A0EFA0 /* Game.swift in Sources */,
+				C376292B2681104200A0EFA0 /* AppDelegate.swift in Sources */,
+				C376292D2681104200A0EFA0 /* SceneDelegate.swift in Sources */,
+				C376293F2681125500A0EFA0 /* GamesListViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C37629302681104200A0EFA0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C37629312681104200A0EFA0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C37629352681104C00A0EFA0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C37629362681104C00A0EFA0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C37629392681104C00A0EFA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C376293A2681104C00A0EFA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C376293C2681104C00A0EFA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F851853555C302F2D47A830 /* Pods-TwichAPI.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QU9GUU5KMV;
+				INFOPLIST_FILE = TwichAPI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rslnmurin.TwichAPI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C376293D2681104C00A0EFA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50B3852AB26795988A6E56E4 /* Pods-TwichAPI.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QU9GUU5KMV;
+				INFOPLIST_FILE = TwichAPI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rslnmurin.TwichAPI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C37629222681104200A0EFA0 /* Build configuration list for PBXProject "TwichAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C37629392681104C00A0EFA0 /* Debug */,
+				C376293A2681104C00A0EFA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C376293B2681104C00A0EFA0 /* Build configuration list for PBXNativeTarget "TwichAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C376293C2681104C00A0EFA0 /* Debug */,
+				C376293D2681104C00A0EFA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C376291F2681104200A0EFA0 /* Project object */;
+}
