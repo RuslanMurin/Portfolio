@@ -13,15 +13,15 @@ class GamesListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         loadData()
-        self.mainTableView.reloadData()
     }
     
     func loadData() {
         requestGames(offset: result.count, completion: { response in
-            self.isDataLoading.toggle()
+            self.isDataLoading = true
             self.result.append(contentsOf: response.top)
+            self.mainTableView.reloadData()
         })
-        self.isDataLoading.toggle()
+        self.isDataLoading = false
     }
     
     func requestGames(offset: Int, completion: @escaping (Result) -> Void) {
@@ -59,7 +59,7 @@ extension GamesListViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        guard !isDataLoading else { return }
+        guard isDataLoading else { return }
         let currentOffset = scrollView.contentOffset.y
         if currentOffset > mainTableView.contentSize.height - scrollView.frame.size.height{
             
